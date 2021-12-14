@@ -1,0 +1,395 @@
+
+<!DOCTYPE html>
+
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Разработка технического задания информационной системы &#8212; документация dz </title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/translations.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="prev" title="Welcome to dz’s documentation!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="id1">
+<h1>Разработка технического задания информационной системы<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">¶</a></h1>
+<section id="id2">
+<h2>1. Общие сведения<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h2>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Полное наименование системы</p></li>
+</ol>
+</div></blockquote>
+<p>«Глейси» - интернет-магазин</p>
+<blockquote>
+<div><ol class="arabic simple" start="2">
+<li><p>Наименование предприятия заказчика и исполнителя</p></li>
+</ol>
+</div></blockquote>
+<p>Заказчик: Костарев П.Д.</p>
+<p>Исполнитель: студент группы 118 Стряпунин А.В.</p>
+<blockquote>
+<div><ol class="arabic simple" start="3">
+<li><p>Основание для разработки</p></li>
+</ol>
+</div></blockquote>
+<p>Работа выполняется на основании задания по предмету «Документирование и сертификация» и требований заказчика, согласованной с руководителем ВКР и заказчиком.</p>
+<blockquote>
+<div><ol class="arabic simple" start="4">
+<li><p>Источники и порядок финансирования</p></li>
+</ol>
+</div></blockquote>
+<p>Источники и порядок финансирования отсутствуют.</p>
+<blockquote>
+<div><ol class="arabic simple" start="5">
+<li><p>Плановые сроки начала и окончания работ</p></li>
+</ol>
+</div></blockquote>
+<p>Срок создания системы не установлен. Срок разработки проекта системы регламентирован действующим учебным планом и предполагает сдачу проекта системы до 19 марта 2021 г.</p>
+<blockquote>
+<div><ol class="arabic simple" start="6">
+<li><p>Порядок оформления и предъявления результатов работ</p></li>
+</ol>
+</div></blockquote>
+<p>Работы по созданию системы производятся и принимаются поэтапно.</p>
+</section>
+<section id="id3">
+<h2>2. Назначение и цели проектирования системы<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">¶</a></h2>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Назначение системы</p></li>
+</ol>
+</div></blockquote>
+<p>«Глейси» — интернет-магазин для покупки мороженного</p>
+<blockquote>
+<div><ol class="arabic simple" start="2">
+<li><p>Цели и задачи проектирования системы</p></li>
+</ol>
+</div></blockquote>
+<p>Целью является разработать сайт, который будет давать возможность посмотреть ассортимент магазина и заказать мороженное.
+В ходе проектирования необходимо выполнить следующие задачи:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Изучить и проанализировать предметную область;</p></li>
+<li><p>Спроектировать дизайн сайта;</p></li>
+<li><p>Сверстать сайт по макету;</p></li>
+<li><p>Создать серверную часть сайта;</p></li>
+<li><p>Создать полноценный сайт объединив Frontend и Backend части;</p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="id4">
+<h2>3. Характеристика объекта автоматизации<a class="headerlink" href="#id4" title="Ссылка на этот заголовок">¶</a></h2>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Краткие сведения об объекте автоматизации</p></li>
+</ol>
+</div></blockquote>
+<p>Существует множество инструментов для создания сайтов. Я решил написать сайт вручную, а для управления контентом сайта использовать CMS WordPress.</p>
+<blockquote>
+<div><ol class="arabic simple" start="2">
+<li><p>Сведения об условиях эксплуатации объекта автоматизации</p></li>
+</ol>
+</div></blockquote>
+<p>Для того, чтобы зайти на сайт надо открыть браузер и перейти по ссылке.</p>
+</section>
+<section id="id5">
+<h2>4. Требования к системе<a class="headerlink" href="#id5" title="Ссылка на этот заголовок">¶</a></h2>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Требования к функционированию системы</p></li>
+</ol>
+</div></blockquote>
+<dl>
+<dt>Сайт должен предоставлять следующие возможности:</dt><dd><ul class="simple">
+<li><p>Предоставлять информацию о магазине и его ассортименте;</p></li>
+<li><p>возможность заказать мороженное;</p></li>
+<li><p>возможность взаимодействовать с объектами сайта.</p></li>
+</ul>
+<p>1.1. Требованиях к численности и квалификации персонала</p>
+</dd>
+<dt>Для использования системы необходим:</dt><dd><blockquote>
+<div><ul class="simple">
+<li><p>пользователь</p></li>
+<li><p>любой желающий</p></li>
+</ul>
+</div></blockquote>
+<p>1.2. Требования к показателям</p>
+</dd>
+</dl>
+<p>Интерфейс сайта должен быть удобным и понятным для пользователя.  Необходима удобная навигация по сайту. Должно быть обеспечено наличие полностью локализованного (русскоязычного) интерфейса пользователя.</p>
+<blockquote>
+<div><p>1.3. Требования к надёжности системы</p>
+</div></blockquote>
+<dl>
+<dt>Надёжное (устойчивое) функционирование программы должно быть обеспечено выполнением заказчиком совокупности организационно-технических мероприятий, перечень которых приведен ниже:</dt><dd><blockquote>
+<div><ul class="simple">
+<li><p>организацией бесперебойного питания технических средств;</p></li>
+<li><p>защита от ошибочных действий пользователей.</p></li>
+</ul>
+</div></blockquote>
+<p>1.4. Дополнительные требования</p>
+</dd>
+</dl>
+<p>Формы отчетов согласуются с Заказчиком во время выполнения работ.</p>
+</section>
+<section id="id6">
+<h2>5. Требования к видам обеспечения<a class="headerlink" href="#id6" title="Ссылка на этот заголовок">¶</a></h2>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Требования к техническому обеспечению</p></li>
+</ol>
+</div></blockquote>
+<dl>
+<dt>Минимальные системные требования для ПК:</dt><dd><ul class="simple">
+<li><p>Процессор Intel Pentium 4 или более поздней версии с поддержкой SSE3.</p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>Требования к программному обеспечению</p></li>
+</ol>
+</dd>
+<dt>Требуемая операционная система для ПК:</dt><dd><ul class="simple">
+<li><p>Windows 7, Windows 8, Windows 8.1, Windows 10 или более поздней версии.</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="id7">
+<h2>6. Порядок контроля и приёмки системы<a class="headerlink" href="#id7" title="Ссылка на этот заголовок">¶</a></h2>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Общие требования к приёму работ</p></li>
+</ol>
+</div></blockquote>
+<p>Приёмка работ производится путем проведения испытаний и предъявления Исполнителем отчетов по выпускной квалификационной работе в рамках изучения дисциплины «Документирование и сертификация».
+По результатам работы оформляется Акт сдачи-приемки работ.
+Цель испытаний состоит в подтверждении объема и качества выполненных работ. Виды, состав и объем испытаний определяются Программой и методикой испытаний.</p>
+<blockquote>
+<div><ol class="arabic simple" start="2">
+<li><p>Требования к испытаниям системы и его составных частей</p></li>
+</ol>
+<p>2.1. Виды испытаний</p>
+</div></blockquote>
+<dl>
+<dt>Для системы устанавливаются следующие виды испытаний:</dt><dd><blockquote>
+<div><ul class="simple">
+<li><p>опытная эксплуатация;</p></li>
+<li><p>приёмочные испытания.</p></li>
+</ul>
+</div></blockquote>
+<p>2.2. Состав испытаний</p>
+</dd>
+</dl>
+<ul>
+<li><p>Приемо-сдаточные испытания должны проводиться на объекте Заказчика в оговоренные сроки.</p></li>
+<li><p>Приемо-сдаточные испытания программы должны проводиться согласно разработанной Исполнителем и согласованной Заказчиком Программы и методик испытаний.</p></li>
+<li><p>Ход проведения приемо-сдаточных испытаний Заказчик и Исполнитель документируют в Протоколе проведения испытаний.</p>
+<blockquote>
+<div><p>2.3. Место проведения испытаний</p>
+</div></blockquote>
+</li>
+</ul>
+<p>Опытная эксплуатация проводится на персональном компьютере Заказчика под управлением операционной системы Windows 7.</p>
+<blockquote>
+<div><p>2.4. Статус приемочной комиссии</p>
+</div></blockquote>
+<p>Статус приемочной комиссии определен как ведомственный.</p>
+</section>
+<section id="id8">
+<h2>7. Требования к составу и содержанию работ по подготовке объекта автоматизации к вводу системы в действие<a class="headerlink" href="#id8" title="Ссылка на этот заголовок">¶</a></h2>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Создание условий функционирования объекта автоматизации</p></li>
+</ol>
+</div></blockquote>
+<p>На этапе разработки программной документации должна быть выполнена разработка программных документов в соответствии с требованиями к составу документации.
+На этапе испытаний программы должны быть выполнены перечисленные ниже виды работ:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>разработка, согласование и утверждение и методики испытаний;</p></li>
+<li><p>проведение приемо-сдаточных испытаний;</p></li>
+<li><p>корректировка программы и программной документации по результатам испытаний.</p></li>
+</ul>
+</div></blockquote>
+<p>На этапе подготовки и передачи программы должна быть выполнена работа по подготовке и передаче программы и программной документации в эксплуатацию на объектах Заказчика.</p>
+</section>
+<section id="id9">
+<h2>8. Требования к документированию<a class="headerlink" href="#id9" title="Ссылка на этот заголовок">¶</a></h2>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Документация технического проекта</p></li>
+</ol>
+<p>1.1. Пояснительная записка к техническому проекту</p>
+</div></blockquote>
+<dl>
+<dt>Пояснительная записка к техническому проекту должна содержать:</dt><dd><blockquote>
+<div><ul class="simple">
+<li><p>общие положения;</p></li>
+<li><p>описание процесса деятельности;</p></li>
+<li><p>описание методики технического проектирования;</p></li>
+<li><p>описание основных технических решений.</p></li>
+</ul>
+</div></blockquote>
+<p>1.2. Описание информационного обеспечения</p>
+</dd>
+<dt>Описание информационного обеспечения должно содержать:</dt><dd><blockquote>
+<div><ul class="simple">
+<li><p>состав информационного обеспечения, включая назначение всех баз данных и наборов данных в системе;</p></li>
+<li><p>описание организации информационного обеспечения;</p></li>
+<li><p>описание организации сбора, обработки и передачи информации;</p></li>
+</ul>
+</div></blockquote>
+<p>1.3. Описание комплекса технических средств</p>
+</dd>
+<dt>Описание комплекса технических средств должно содержать:</dt><dd><blockquote>
+<div><ul class="simple">
+<li><p>описание решений по оснащению рабочих мест.</p></li>
+</ul>
+</div></blockquote>
+<p>1.4. Описание программного обеспечения</p>
+</dd>
+<dt>Описание программного обеспечения должно содержать:</dt><dd><blockquote>
+<div><ul class="simple">
+<li><p>описание компонентов программного обеспечения, их назначения и функций;</p></li>
+<li><p>перечень используемых операционных систем.</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>Эксплуатационная документация</p></li>
+</ol>
+<p>2.1. Общее описание системы</p>
+</dd>
+<dt>Общее описание системы должно содержать:</dt><dd><blockquote>
+<div><ul class="simple">
+<li><p>назначение системы;</p></li>
+<li><p>вид деятельности, для которой предназначена система;</p></li>
+<li><p>перечень функций, реализуемых системой.</p></li>
+</ul>
+</div></blockquote>
+<p>2.2. Руководство пользователя</p>
+</dd>
+</dl>
+<p>Для осуществления функций системы должно быть разработано руководство пользователя.</p>
+<blockquote>
+<div><ol class="arabic simple" start="3">
+<li><p>Требования к документированию комплектующих элементов</p></li>
+</ol>
+</div></blockquote>
+<p>Общее программное обеспечение и технические средства снабжаются документацией, входящей в поставляемый производителем комплект.</p>
+<blockquote>
+<div><ol class="arabic simple" start="4">
+<li><p>Общие требования к документированию</p></li>
+</ol>
+</div></blockquote>
+<p>Документация в электронном виде (как целиком, так и её часть) может быть получена отдельно от дистрибутива и использована с учётом авторских прав, указанных в данных материалах.
+Помимо документации в электронном виде, пользователям и разработчикам может быть представлена документация на бумажных носителях.</p>
+</section>
+<section id="id10">
+<h2>9. Источники разработки<a class="headerlink" href="#id10" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Исходными документами для разработки настоящего технического задания являются: нормативно-техническая документация Заказчика, ГОСТ 34.602- 89, образцы рабочих документов, полученных в процессе обследования, информационные материалы и проектная документация на аналогичные автоматизированные системы, информационные материалы курсовых, дипломных и диссертационных работ студентов АНПОО «Академической школы ИТ» на похожие темы.</p>
+<hr class="docutils" />
+<p><a class="reference external" href="index.html">Вернуться к списку разделов</a></p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">dz</a></h1>
+
+
+
+
+
+
+
+
+<h3>Навигация</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Разработка технического задания информационной системы</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">1. Общие сведения</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">2. Назначение и цели проектирования системы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">3. Характеристика объекта автоматизации</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">4. Требования к системе</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">5. Требования к видам обеспечения</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">6. Порядок контроля и приёмки системы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">7. Требования к составу и содержанию работ по подготовке объекта автоматизации к вводу системы в действие</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">8. Требования к документированию</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id10">9. Источники разработки</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="предыдущая глава">Welcome to dz’s documentation!</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Быстрый поиск</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Искать" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, artem stryapunin.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/main_win.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
